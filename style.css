@@ -1,0 +1,75 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: orangered;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+ 
+}
+
+.box {
+    border: solid 2px black;
+    padding: 20px 80px 200px 80px;
+    text-align: center;
+    width: 40%;
+    margin: 200px auto;
+    border-radius: 80px;
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+box-shadow: rgba(0, 0, 0, 0.349) 30px 30px 30px ;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-shadow: rgba(250, 96, 25, 0.623) 3px 3px 3px 10px  ;
+}
+
+input{
+    margin-top: 50px;
+    padding: 15px;
+    border-radius: 60px;
+    background: orangered;
+    font-size: 1.4rem;
+    color: white;
+    box-shadow: 2px 1px 1px 2px rgba(0, 0, 0, 0.63);
+    border: none;
+
+
+}
+
+li {
+    list-style: none;
+    margin-top: 20px;
+    text-align: left;
+    font-size: 1.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    user-select: none;
+
+}
+li:hover {
+    cursor: pointer;
+}
+li:hover::after {
+    cursor: pointer;
+    color: rgb(223, 68, 11);
+    content: "(supprimer)";
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+li::before {
+    font-family: "Font Awesome 5 Free";
+    content: "*";
+    font-weight: 900;
+    font-size: 2rem;
+    align-items: center;
+}
+
+::placeholder {
+    color: white;
+   
+  }
