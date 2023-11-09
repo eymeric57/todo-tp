@@ -4,8 +4,21 @@ const form = document.getElementById("form");
 const todoList = document.getElementById("list");
 
 function storeList() {
-    window.localStorage.todoList = todoList.innerHTML;
+    window.localStorage.todoList = todoList.innerHTML; 
   }
+
+  function getTodos() {
+    todoList.innerHTML = window.localStorage.todoList;
+  }
+
+  getTodos();
+ 
+ 
+  
+  
+ console.log(localStorage);
+
+  
 let todo = "";
 
 monInput.addEventListener("input", (e) => {
@@ -23,8 +36,9 @@ form.addEventListener("submit", (e) => {
     
     todoList.innerHTML += `<li> ${todo} </li>`;
     monInput.value = ''; 
+    storeList();
 }
-storeList();
+
 });
 
 list.addEventListener("click", (e) => {
@@ -35,6 +49,5 @@ list.addEventListener("click", (e) => {
   }
   storeList();
 });
-
 
 

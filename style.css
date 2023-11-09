@@ -1,4 +1,10 @@
 
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Source+Code+Pro:wght@300&display=swap');
+
+ @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+  </style>
+
 
 * {
     margin: 0;
@@ -6,39 +12,48 @@
 }
 
 body {
-    background: orangered;
+    background: #f7f4ed;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    
  
 }
 
 .box {
-    border: solid 2px black;
+    border: solid 2px  #635e59;
     padding: 20px 80px 200px 80px;
     text-align: center;
     width: 40%;
     margin: 200px auto;
-    border-radius: 80px;
-    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    border-radius: 20px;
+    background-color:#edc;
 box-shadow: rgba(0, 0, 0, 0.349) 30px 30px 30px ;
 }
 
 h1 {
     font-size: 2.5rem;
     text-shadow: rgba(250, 96, 25, 0.623) 3px 3px 3px 10px  ;
+    color: #635e59;
+    font-family: 'Merriweather', serif;
+   border: solid black 2px;
+border-radius: 10px;
+   padding: 15px;
 }
 
 input{
     margin-top: 50px;
     padding: 15px;
     border-radius: 60px;
-    background: orangered;
+    background: #8d7c5fc7;
     font-size: 1.4rem;
-    color: white;
-    box-shadow: 2px 1px 1px 2px rgba(0, 0, 0, 0.63);
+    color: #edc878;
+    box-shadow: 2px 3px 1px 2px rgba(143, 137, 137, 0.63);
     border: none;
+    font-family: 'Caveat', cursive;
 
 
+}
+input::placeholder {
+    color: #edc878;
 }
 
 li {
@@ -46,17 +61,18 @@ li {
     margin-top: 20px;
     text-align: left;
     font-size: 1.5rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Caveat', cursive;
     user-select: none;
 
 }
 li:hover {
     cursor: pointer;
+  
 }
 li:hover::after {
     cursor: pointer;
     color: rgb(223, 68, 11);
-    content: "(supprimer)";
+    content: "(Valider)";
     font-size: 0.8rem;
     font-weight: 700;
 }
@@ -68,8 +84,21 @@ li::before {
     font-size: 2rem;
     align-items: center;
 }
+li.checked:before {
+    content: "✔";
+    padding: 10px 10px;
+    font-size: 1.1rem;
+    color: #fd4a1d;
+  }
+  li.checked:hover::after {
+    cursor: pointer;
+    color: rgb(223, 68, 11);
+    content: "(supprimer)";
+    font-size: 0.8rem;
+    font-weight: 700;
+}
 
 ::placeholder {
     color: white;
    
-  }
+  } 
